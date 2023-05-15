@@ -29,3 +29,16 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 ### 2.6: to_any
 - Convert any integer number to its closest representation of the number in base `b`, where the smallest denomination (rightmost unit) is `b^0` and the largest is `b^(max - 1)` (leftmost unit)
 - `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
+
+## Chapter 3: Arrays
+### 3.1: student_quartiles
+- Find the quartiles of a set of student grades.
+- Include `fstream` library to read in `.csv` file
+### 3.2: median
+- Find the highest median out of 3 agents' sales data over 12 months
+- User inputs data
+- Use `qsort()` to sort monthly sales from fiscal year
+- return middle number in sequence or the mean of 2 middle numbers
+### 3.3: mode
+- Counts the number of times each number appears in a sequence of numbers, and returns the mode(s) (the number(s) that appear the most frequently) in the form of a `vector`.
+- Use `vector` histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
