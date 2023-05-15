@@ -91,4 +91,40 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 - Deleting the last character in the string
 - Finding character at a given index
 - Getting substrings. 
-- Also includes destructor, copy constructor, overloaded assignment operator and overloaded \[] operator.
+- Also includes destructor, copy constructor, overloaded assignment operator and overloaded `[]` operator.
+
+## Chapter 6: Recursion
+### 6.0: binary_tree_template
+- My template for basic binary tree
+- Includes methods for: 
+- Making a new tree given amount of levels 
+- Printing the tree 
+- Inserting a number
+- Also includes overloaded assignment operator, destructor, and copy constructor.
+### 6.1: largest_array_value
+- Finds largest number in an array recursively
+### 6.2: pos_num_sum
+- Recursively add all of the positive numbers in a linked list, return sum
+### 6.3: binary_string
+#### binary_string (array)
+- Store string of `boolean` values in an array, return true if there are an even number of true values, false otherwise
+- Done recursively and iteratively
+#### binary_string (linked list)
+- Store string of `boolean` values in a linked list, return true if there are an even number of true values, false otherwise
+- Done recursively
+### 6.4: appearance_counter
+#### appearance_counter (array)
+- Counts the amount of times a target number appears in an array
+- Done recursively and iteratively
+#### appearance_counter (linked list)
+- Counts the amount of times a target number appears in a linked list
+- Done recursively.
+### 6.5: heap_binary_tree
+- Binary Tree Heap program
+- Includes functions for:
+- Checking if a tree is a heap
+- Making a heap
+- Printing binary tree
+- Making a random binary tree
+- Deleting tree after use to free up memory
+###
