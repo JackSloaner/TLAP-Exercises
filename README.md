@@ -42,3 +42,31 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 ### 3.3: mode
 - Counts the number of times each number appears in a sequence of numbers, and returns the mode(s) (the number(s) that appear the most frequently) in the form of a `vector`.
 - Use `vector` histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
+
+## Chapter 4: Pointers
+### 4.1: dynamically_allocated_strings
+- Stores strings as a struct containing a pointer to the string (array of characters), and its length.
+- Includes functions for
+- Reading in a string from a file
+- Deleting a string
+- Printing a string
+- Getting a substring
+- Replacing a substring with another string.
+- Deleting lists after use to free up memory
+### 4.2: linked_list_numbers
+- Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
+- `sumLists()`Adds two linked list numbers together, and returns the sum in the form of linked list
+- Includes functions for:
+- Getting user input
+- Converting int number to linked list
+- Deleting lists after use to free up memory
+### 4.3: linked_list_strings
+- Stores strings as linked lists of characters. 
+- Includes functions for:
+- Appending character to string
+- Concatenating string to another string
+- Removing characters from a string given a position and a number of characters to delete.
+- Deleting lists after use to free up memory
+### 4.4: mode_linked_list
+- Finds the mode(s) in a linked list of numbers
+- Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
