@@ -70,3 +70,25 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 ### 4.4: mode_linked_list
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
+
+## Chapter 5: Classes
+### 5.1: automobile_class
+- First C++ class, mock automobile information class
+### 5.2: student_collection
+- Class for a collection of students
+- Includes public methods for:
+- Adding a student
+- Getting the average grade
+- Getting a student by `id`
+- Getting a collection of students within a grade range
+- Also includes overloaded assignment operator, destructor, and copy constructor.
+### 5.3: string_class
+- Class for strings as linked list of of characters. 
+- Includes public methods for:
+- Appending an extra character
+- Concatenating another string of the same class
+- Deleting a certain character out of a string,
+- Deleting the last character in the string
+- Finding character at a given index
+- Getting substrings. 
+- Also includes destructor, copy constructor, overloaded assignment operator and overloaded \[] operator.
