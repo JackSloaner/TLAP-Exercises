@@ -10,3 +10,22 @@ This repository contains all the practice questions I've completed while reading
 - Design patterns (builders, iterators, strategy/policy, etc.).
 
 Completing these exercises has been incredibly helpful in my learning journey, not only in terms of learning new programming concepts but also in the fundamental way in which I approach problems in general.
+
+## Table of Contents
+## Chapter 2: Puzzles
+### 2.1: upside_down_triangle
+- Print an upside down triangle in the shell using hashes and spaces
+### 2.2: diamond
+- Print a diamond in the shell using hashes and spaces
+### 2.3: weird_x
+- Print a weird X in the shell using hashes and spaces, mimicing the shape from the book
+- Use timer library to make the X appear to grow in the shell, printing a slightly larger X each time 0.1 seconds passes.
+### 2.4: box
+- Print length * length box of hashes in the shell, with an X of hashes crossing through the middle of the box
+- Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
+- Adapt algorithm to deal with even and odd values of length slightly differently
+### 2.5: to_binary
+- Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
+### 2.6: to_any
+- Convert any integer number to its closest representation of the number in base `b`, where the smallest denomination (rightmost unit) is `b^0` and the largest is `b^(max - 1)` (leftmost unit)
+- `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
