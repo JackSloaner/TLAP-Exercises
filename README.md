@@ -3,7 +3,7 @@
 This repository contains all the practice questions I've completed while reading the book "Think Like a Programmer: An Introduction to Creative Problem Solving" by V. Anton Spraul. At the end of each of his chapters, all of which focus on one of what the author believes are core concepts in modern programming, he includes a set of practice quesions to help the reader apply the methods he presents in the chapter. This helps the reader internalize the concepts at hand by having them flesh out each individual idea themselves. By solving these questions, I was able to apply and deepen my knowledge of various programming abstractions, including but not limited to:
 - Object Oriented programming 
 - Recursion
-- Pointers and dynamic memory allocation
+- Pointers and dynamic memory
 - Complex data types/data structures (linked lists, different variations of binary trees, hash tables, lists, etc.)
 - Algorithms
 - Libraries
@@ -127,4 +127,29 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 - Printing binary tree
 - Making a random binary tree
 - Deleting tree after use to free up memory
-###
+### 6.6: binary_search_tree
+- Class for binary search tree.
+- Includes methods for:
+- Making a basic binary search tree given number of levels
+- verifying if tree is in fact binary search using recursion (`isBinarySearch()`)
+- Making random tree given a number levels to test `isBS()` (`makeRandTree()`)
+- Inserting any given number into tree at the proper place to maintain binary search \*\***main display of recursion**\*\*
+- Printing numbers in tree in a sequence (primitivePrint())
+- Printing tree visually (printTree())
+- Also includes copy constructor, random tree constructor, and destructor
+### 6.7 binary_tree_statistics
+Class for binary tree
+- Includes methods for:
+- Inserting number into next available spot in tree
+- Finding the mean of all numbers in the tree
+- Finding the median of all numbers in the tree
+- Finding the mode(s) of all numbers in the tree
+- Print modes
+- Print numbers in tree in sequence
+- Printing the tree visually
+- Overloaded assignment operator
+- Constructor and destructor
+
+
+\*\***Highlighted helper function**\*\*:
+- `mergeSort`: Sorts an array of integers using merge sort, returns a pointer to the sorted array
