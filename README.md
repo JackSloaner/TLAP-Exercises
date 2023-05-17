@@ -137,7 +137,7 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 - Printing numbers in tree in a sequence (primitivePrint())
 - Printing tree visually (printTree())
 - Also includes copy constructor, random tree constructor, and destructor
-### 6.7 binary_tree_statistics
+### 6.7: binary_tree_statistics
 Class for binary tree
 - Includes methods for:
 - Inserting number into next available spot in tree
@@ -153,3 +153,23 @@ Class for binary tree
 
 \*\***Highlighted helper function**\*\*:
 - `mergeSort`: Sorts an array of integers using merge sort, returns a pointer to the sorted array
+
+## Chapter 7: Code Reuse
+### 7.1: list_students
+- Variant of the studentColletion class that uses imported list class instead of a linked list to store the studentRecord objects
+### 7.2: hash_table
+- My Hash table template class
+- Includes methods to:
+- Add key-value pairs
+- Get values by key
+- Hash function
+- Constructor and destructor
+- Includes hashNode class as linked list to deal with collisions
+### 7.3: first_student
+Use policy/strategy design pattern to allow the user to specify the sorting policy for the firstStudent() method.
+### 7.4: dynamic_features
+Add on to the studentCollection class from chapter 5. 
+- Student records are now stored in objects with linked lists containing their attributes (grade, name date of birth, etc.), seperated into types. 
+- Includes a builder class that can be used to create student records with custom attributes.
+- The studentCollection (`stuCo`) class can read in a csv file and create student records from it. Also includes deep copy constructor and overloaded assignment operator.
+- Contains modified methods from the original stuCo class that work with the new builder and studentrecord classes, such as: averageRecord, recordRange, as well as the overloaded assignment operator and deep copy constructor.
