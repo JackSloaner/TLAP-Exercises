@@ -10,6 +10,15 @@ This repository contains all the practice questions I've completed while reading
 - Design patterns (builders, iterators, strategy/policy, etc.).
 
 Completing these exercises has been incredibly helpful in my learning journey, not only in terms of learning new programming concepts but also in the fundamental way in which I approach problems in general.
+## How to use
+1. Clone this repository onto your local machine
+2. To run the programs as they are already set up in `int main()`, simply navigate to the chosen program's file, in which you will find a pre-compiled executable file, enter `./{filename}` into the command line to run the program
+3. (optional) If you want to make changes to the code in `int main()` to test out the different functions in a given program, you will have to install a C++ compiler to compile and execute your new code. Here are download links for different operating systems:
+- [Windows](https://sourceforge.net/projects/mingw/): Install the latest supported release.
+- Mac: Enter the following line into your command line to download Xcode command line tools: `xcode-select --install`.
+- [Linux](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/): Follow outlined steps in this article
+4. (optional) Once you have dowloaded the compiler, navigate to the program you would like to edit. Once you have made your changes, enter `g++ {filename.cpp}` into the command line to compile code. To run your new code, enter `./a.out` into the command line.
+
 ## Highlighted Programs
 These are the programs I believe best display my ability to apply the techniques taught in this book. The programs are in ascending order of difficulty.
 1. [6.4: appearance_counter](#64-appearance_counter)
