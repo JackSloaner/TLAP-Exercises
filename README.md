@@ -12,6 +12,16 @@ This repository contains all the practice questions I've completed while reading
 Completing these exercises has been incredibly helpful in my learning journey, not only in terms of learning new programming concepts but also in the fundamental way in which I approach problems in general.
 ## Highlighted Programs
 These are the programs I believe best display my ability to apply the techniques taught in this book. The programs are in ascending order of difficulty.
+1. [6.4: appearance_counter](#64-appearance_counter)
+2. [2.6: to_any](#26-to_any)
+3. [4.4: mode_linked_list](#44-mode_linked_list)
+4. [5.3: string_class](#53-string_class)
+5. [7.2: hash_table](#72-hash_table)
+6. [7.3: first_student](#73-first_student)
+7. [6.6: binary_search_tree](#66-binary_search_tree)
+8. [7.4: dynamic_features](#74-dynamic_features)
+9. [6.7: binary_tree_statistics](#67-binary_tree_statistics)
+
 ## Table of Contents
 **[Chapter 2: Puzzles](#chapter-2-puzzles)**
 - [2.1: upside_down_triangle](#21-upside_down_triangle)
@@ -165,9 +175,11 @@ These are the programs I believe best display my ability to apply the techniques
 - Store string of `boolean` values in a linked list, return true if there are an even number of true values, false otherwise
 - Done recursively
 ### 6.4: appearance_counter
+**Example of head recursion use**
 #### appearance_counter (array)
 - Counts the amount of times a target number appears in an array
 - Done recursively and iteratively
+
 #### appearance_counter (linked list)
 - Counts the amount of times a target number appears in a linked list
 - Done recursively.
