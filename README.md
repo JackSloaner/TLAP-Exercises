@@ -10,8 +10,60 @@ This repository contains all the practice questions I've completed while reading
 - Design patterns (builders, iterators, strategy/policy, etc.).
 
 Completing these exercises has been incredibly helpful in my learning journey, not only in terms of learning new programming concepts but also in the fundamental way in which I approach problems in general.
-
+## Highlighted Programs
+These are the programs I believe best display my ability to apply the techniques taught in this book. The programs are in ascending order of difficulty.
 ## Table of Contents
+**[Chapter 2: Puzzles](#chapter-2-puzzles)**
+- [2.1: upside_down_triangle](#21-upside_down_triangle)
+- [2.2: diamond](#22-diamond)
+- [2.3: weird-x](#23-weird_x)
+- [2.4: box](#24-box)
+- [2.5: to_binary](#25-to_binary)
+- [2.6: to_any](#26-to_any)
+
+<!--New Chapter-->
+
+**[Chapter 3: Arrays](#chapter-3-arrays)**
+- [3.1: student_quartiles](#31-student_quartiles)
+- [3.2: median](#32-median)
+- [3.3: mode](#33-mode)
+
+<!--New Chapter-->
+
+**[Chapter 4: Pointers](#chapter-4-pointers)**
+- [4.1: dynamically_allocated_strings](#41-dynamically_allocated_strings)
+- [4.2: linked_list_numbers](#42-linked_list_numbers)
+- [4.3: linked_list_strings](#43-linked_list_strings)
+- [4.4: mode_linked_list](#44-mode_linked_list)
+
+<!--New Chapter-->
+
+**[Chapter 5: Classes](#chapter-5-classes)**
+- [5.1: automobile_class](#51-automobile_class)
+- [5.2: student_collection](#52-student_collection)
+- [5.3: string_class](#53-string_class)
+
+<!--New Chapter-->
+
+**[Chapter 6: Recursion](#chapter-6-recursion)**
+- [6.0: binary_tree_template](#60-binary_tree_template)
+- [6.1: largest_array_value](#61-largest_array_value)
+- [6.2: pos_num_sum](#62-pos_num_sum)
+- [6.3: binary_string](#63-binary_string)
+- [6.4: appearance_counter](#64-appearance_counter)
+- [6.5: heap_binary_tree](#65-heap_binary_tree)
+- [6.6: binary_search_tree](#66-binary_search_tree)
+- [6.7: binary_tree_statistics](#67-binary_tree_statistics)
+
+<!--New Chapter-->
+
+**[Chapter 7: Code Reuse](#chapter-7-code-reuse)**
+- [7.1: list_students](#71-list_students)
+- [7.2: hash_table](#72-hash_table)
+- [7.3: first_student](#73-first_student)
+- [7.4: dynamic_features](#74-dynamic_features)
+
+
 ## Chapter 2: Puzzles
 ### 2.1: upside_down_triangle
 - Print an upside down triangle in the shell using hashes and spaces
@@ -26,7 +78,7 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
 - Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
-### 2.6: to_any
+### 2.6: to_any 
 - Convert any integer number to its closest representation of the number in base `b`, where the smallest denomination (rightmost unit) is `b^0` and the largest is `b^(max - 1)` (leftmost unit)
 - `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
 
