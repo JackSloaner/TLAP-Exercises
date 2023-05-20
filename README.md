@@ -119,26 +119,26 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 3: Arrays
 ### 3.1: student_quartiles
-**Question in the book:**<br>‎<br>
+**Question in the book:** `Write a program that processes an array of student objects and determines the grade quartiles--that is, the grade one would need to score as well as or better than 25% of the students, 50% of the students, and 75% of the students.`<br>‎<br>
 **Program decsription:** <br>
 - Find the quartiles of a set of student grades.
 - Include `fstream` library to read in `.csv` file
 ### 3.2: median
-**Question in the book:** <br>‎<br>
+**Question in the book:** `Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median]`<br>‎<br>
 **Program decsription:** <br>
 - Find the highest median out of 3 agents' sales data over 12 months
 - User inputs data
 - Use `qsort()` to sort monthly sales from fiscal year
 - return middle number in sequence or the mean of 2 middle numbers
 ### 3.3: mode
-**Question in the book:** <br>‎<br>
+**Question in the book:** `Write a program that is given an array of integers and determines the mode, which is the number that appears most frequently in the array.` <br>‎<br>
 **Program decsription:** <br>
 - Counts the number of times each number appears in a sequence of numbers, and returns the mode(s) (the number(s) that appear the most frequently) in the form of a `vector`.
 - Use `vector` histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Question in the book:** <br>‎<br>
+**Question in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>`q 4.2: For our dynamically allocated strings, create a function "substring" that takes three parameters: An "arrayString", a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.`, <br> `q 4.3: For our dynamically allocated strings, create a function "replaceString" that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing "abcdabee", target points to "ab", and replaceText points to "xyz", then when the function ends, source should point to an array containing xyzdxyzee`<br>‎<br>
 **Program decsription:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
