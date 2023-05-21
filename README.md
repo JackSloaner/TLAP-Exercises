@@ -85,60 +85,60 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 2: Puzzles
 ### 2.1: upside_down_triangle
-**Question in the book:** `Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}` <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}** <br>‎<br>
 **Program decsription:** <br>
 - Print an upside down triangle in the shell using hashes and spaces
 - Prints the shape in variable size (i.e. `triangle(5)` is one hash taller and two hashes wider than `triangle(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.2: diamond
-**Question in the book:** `Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}` <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}** <br>‎<br>
 **Program decsription:** <br>
 - Print a diamond in the shell using hashes and spaces 
 - Prints the shape in variable size (i.e. `diamond(5)` is two hashes taller and two hashes wider than `diamond(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.3: weird_x
-**Question in the book:** `Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of a weird looking X}` <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of a weird looking X}** <br>‎<br>
 **Program decsription:** <br>
 - Print a weird X in the shell using hashes and spaces, mimicing the shape from the book
 - Prints the shape in variable size (i.e. `x(5)` is two hashes taller and two hashes wider than `x(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 - Use timer library to make the X appear to grow in the shell, printing a slightly larger X each time 0.1 seconds passes.
 ### 2.4: box
-**Question in the book:** `Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shapes rule`<br>‎<br>
+**Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shapes rule**<br>‎<br>
 **Program decsription:** <br>
 - Print `length` * `length` box of hashes in the shell, with an X of hashes crossing through the middle of the box
 - Prints the shape in variable size (i.e. `box(5)` is two hashes taller and two hashes wider than `box(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 - Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
-**Question in the book:** `If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ int)`<br>‎<br>
+**Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ int)**<br>‎<br>
 **Program decsription:** <br>
 - Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
 ### 2.6: to_any 
-**Question in the book:** `Want an extra challenge? Generalize the code for the previous exercise to make a program that converts from any number base-16 or less to any other number base`<br>‎<br>
+**Question in the book:** **Want an extra challenge? Generalize the code for the previous exercise to make a program that converts from any number base-16 or less to any other number base**<br>‎<br>
 **Program decsription:** <br>
 - Convert any number in any base to its representation of the number in any other base `b`, where the smallest denomination (rightmost unit) represents `number` * `b^0` and the largest is `number` * `b^(max - 1)` (leftmost unit)
 - `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
 
 ## Chapter 3: Arrays
 ### 3.1: student_quartiles
-**Question in the book:** `Write a program that processes an array of student objects and determines the grade quartiles--that is, the grade one would need to score as well as or better than 25% of the students, 50% of the students, and 75% of the students.`<br>‎<br>
+**Question in the book:** **Write a program that processes an array of student objects and determines the grade quartiles--that is, the grade one would need to score as well as or better than 25% of the students, 50% of the students, and 75% of the students.**<br>‎<br>
 **Program decsription:** <br>
 - Find the quartiles of a set of student grades.
 - Include `fstream` library to read in `.csv` file
 ### 3.2: median
-**Question in the book:** `Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median]`<br>‎<br>
+**Question in the book:** **Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median]**<br>‎<br>
 **Program decsription:** <br>
 - Find the highest median out of 3 agents' sales data over 12 months
 - User inputs data
 - Use `qsort()` to sort monthly sales from fiscal year
 - return middle number in sequence or the mean of 2 middle numbers
 ### 3.3: mode
-**Question in the book:** `Write a program that is given an array of integers and determines the mode, which is the number that appears most frequently in the array.` <br>‎<br>
+**Question in the book:** **Write a program that is given an array of integers and determines the mode, which is the number that appears most frequently in the array.** <br>‎<br>
 **Program decsription:** <br>
 - Counts the number of times each number appears in a sequence of numbers, and returns the mode(s) (the number(s) that appear the most frequently) in the form of a `vector`.
 - Use `vector` histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Question in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>`q 4.2: For our dynamically allocated strings, create a function "substring" that takes three parameters: An "arrayString", a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.`, <br> `q 4.3: For our dynamically allocated strings, create a function "replaceString" that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing "abcdabee", target points to "ab", and replaceText points to "xyz", then when the function ends, source should point to an array containing xyzdxyzee`<br>‎<br>
+**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q 4.2: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q 4.3: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
 **Program decsription:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
@@ -149,7 +149,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Replacing a substring with another string.
 - Deleting lists after use to free up memory
 ### 4.2: linked_list_numbers
-**Question in the book:** <br>‎<br>
+**Questions in the book:**<br> **Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linke list of this sort.**<br>
+**For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum**<br>‎<br>
 **Program decsription:** <br>
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
 - `sumLists()`Adds two linked list numbers together, and returns the sum in the form of linked list
@@ -158,7 +159,7 @@ These are the programs I believe best display my ability to apply the techniques
 - Converting int number to linked list
 - Deleting lists after use to free up memory
 ### 4.3: linked_list_strings
-**Question in the book:** <br>‎<br>
+**Question in the book:** **Let's create an implementation for strings that uses a linked list of characters instead of dynamically allocated arrays. So we'll have a linked list where the data payload is a single char; this will allow strings to grow without having to re-create the entire string. We'll start by implementing the `append` and `characterAt` functions.** <br>‎<br>
 **Program decsription:** <br>
 - Stores strings as linked lists of characters. 
 - Includes functions for:
