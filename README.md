@@ -108,7 +108,7 @@ These are the programs I believe best display my ability to apply the techniques
 - Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
-**Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ int)**<br>‎<br>
+**Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ `int`)**<br>‎<br>
 **Program decsription:** <br>
 - Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
 ### 2.6: to_any 
@@ -138,7 +138,7 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
+**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
 **Program decsription:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
@@ -177,14 +177,14 @@ These are the programs I believe best display my ability to apply the techniques
 ## Chapter 5: Classes
 ### 5.1: automobile_class
 **Questions in the book: <br>
-q1 Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with get/set methods for each data member.<br>
-q2 For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, "1957 Chevrolet Impala. Add a support method that returns the age of the automobile in years."**<br>‎<br>
+q1 Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with `get`/`set` methods for each data member.<br>
+q2 For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years."**<br>‎<br>
 **Program decsription:** <br>
 - First C++ class, mock automobile information class
 - Contains get/set methods for data members, and constructors.
 ### 5.2: student_collection
 **Questions in the book: <br>q1: Take the student record functions from Chapter 4 (addRecord and averageRecord) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
-q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, myCollection.recordRange(75, 80) would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
+q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, `myCollection.recordRange(75, 80)` would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
 **Program decsription:** <br>
 - Class for a collection of students
 - Includes public methods for:
