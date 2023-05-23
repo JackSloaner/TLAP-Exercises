@@ -138,7 +138,7 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q 4.2: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q 4.3: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
+**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type "arrayString": source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
 **Program decsription:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
@@ -149,8 +149,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Replacing a substring with another string.
 - Deleting lists after use to free up memory
 ### 4.2: linked_list_numbers
-**Questions in the book:**<br> **Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linke list of this sort.**<br>
-**For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum**<br>‎<br>
+**Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linke list of this sort.**<br>
+**q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum**<br>‎<br>
 **Program decsription:** <br>
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
 - `sumLists()`Adds two linked list numbers together, and returns the sum in the form of linked list
@@ -168,18 +168,23 @@ These are the programs I believe best display my ability to apply the techniques
 - Removing characters from a string given a position and a number of characters to delete.
 - Deleting lists after use to free up memory
 ### 4.4: mode_linked_list
-**Question in the book:** <br>‎<br>
+**Question in the book: Design your own: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers** <br>‎<br>
 **Program decsription:** <br>
+- Use linked list to solve limitation caused by arrays when using histogram, eliminating need to use `vector` class.
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 
 ## Chapter 5: Classes
 ### 5.1: automobile_class
-**Question in the book:** <br>‎<br>
+**Questions in the book: <br>
+q1 Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with get/set methods for each data member.<br>
+q2 For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, "1957 Chevrolet Impala. Add a support method that returns the age of the automobile in years."**<br>‎<br>
 **Program decsription:** <br>
 - First C++ class, mock automobile information class
+- Contains get/set methods for data members, and constructors.
 ### 5.2: student_collection
-**Question in the book:** <br>‎<br>
+**Questions in the book: <br>q1: Take the student record functions from Chapter 4 (addRecord and averageRecord) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
+q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, myCollection.recordRange(75, 80) would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
 **Program decsription:** <br>
 - Class for a collection of students
 - Includes public methods for:
@@ -189,7 +194,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Getting a collection of students within a grade range
 - Also includes overloaded assignment operator, destructor, and copy constructor.
 ### 5.3: string_class
-**Question in the book:** <br>‎<br>
+**Questions in the book:<br>q1: Take the variable length string functions from Chapter 4 (`append`, `concatenate`, `characterAt`) and use them to create a class for variable-length strings, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
+q2: For the variable-length string class of the previous exercise, replace the `characterAt` method with an overloaded `[]` operator. For example, if `myString` is an object of our class, then `myString[1]` should return the same result as `myString.characterAt(1)`.**<br>‎<br>
 **Program decsription:** <br>
 - Class for strings as linked list of of characters. 
 - Includes public methods for:
