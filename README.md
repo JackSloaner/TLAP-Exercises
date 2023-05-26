@@ -218,15 +218,17 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Inserting a number
 - Also includes overloaded assignment operator, destructor, and copy constructor.
 ### 6.1: largest_array_value
-**Question in the book:** <br>‎<br>
+**Not a practice question; just coding along with one of the examples from the chapter.** <br>‎<br>
 **Program decsription:** <br>
 - Finds largest number in an array recursively
 ### 6.2: pos_num_sum
-**Question in the book:** <br>‎<br>
+**Questions in the book: Write a function to compute the sum of just the positive numbers in an array of integers. First, solve the problem using iteration. Then, using the technique shown in the chapter, convert your iterative function to a recursive function.**<br>‎<br>
 **Program decsription:** <br>
 - Recursively add all of the positive numbers in a linked list, return sum
 ### 6.3: binary_string
-**Question in the book:** <br>‎<br>
+**Questions in the book: <br>
+q1: Consider an array representing a binary string, where every element's data value is `0` or `1`. Write a `bool` function to determine whether the binary string has odd parity (an odd number of 1 bits), or even parity (an even number of 1 bits). Solve the problem first using iteration, then recursion. <br>
+q2: Solve exercise \[`q1`] again, using a linked list instead of an array.**<br>‎<br>
 **Program decsription:** <br>
 #### binary_string (array)
 - Store string of `boolean` values in an array, return true if there are an even number of true values, false otherwise
@@ -235,7 +237,9 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Store string of `boolean` values in a linked list, return true if there are an even number of true values, false otherwise
 - Done recursively
 ### 6.4: appearance_counter
-**Question in the book:** <br>‎<br>
+**Questions in the book: <br>
+q1: Write a function that is passed an array of integers and a `target` number and returns the number of occurrences of the `target` in the array. Solve the problem first using iteration, then recursion. <br>
+q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br>‎<br>
 **Program decsription:** <br>
 **\*\*Example of head recursion use\*\***
 #### appearance_counter (array)
@@ -245,7 +249,7 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Counts the amount of times a target number appears in a linked list
 - Done recursively.
 ### 6.5: heap_binary_tree
-**Question in the book:** <br>‎<br>
+**Question in the book: Some words in programming have more than one common meaning. In `Chapter 4`, we learned about the `heap`, from which we get memory allocated with `new`. The term `heap` also describes a binary tree in which each node value is higher than any in the left or right subtree. Write a recursive function to determine whether a binary tree is a `heap`.** <br>‎<br>
 **Program decsription:** <br>
 - Binary Tree Heap program
 - Includes functions for:
@@ -255,7 +259,7 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Making a random binary tree
 - Deleting tree after use to free up memory
 ### 6.6: binary_search_tree
-**Question in the book:** <br>‎<br>
+**Question in the book: a `binary search tree` is a binary tree in which each node value is grater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
 **Program decsription:** <br>
 - Class for binary search tree.
 - Includes methods for:
@@ -267,7 +271,7 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Printing tree visually (printTree())
 - Also includes copy constructor, random tree constructor, and destructor
 ### 6.7: binary_tree_statistics
-**Question in the book:** <br>‎<br>
+**Question in the book: Design your own: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
 **Program decsription:** <br>
 Class for binary tree
 - Includes methods for:
