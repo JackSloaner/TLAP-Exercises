@@ -86,60 +86,60 @@ These are the programs I believe best display my ability to apply the techniques
 ## Chapter 2: Puzzles
 ### 2.1: upside_down_triangle
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Print an upside down triangle in the shell using hashes and spaces
 - Prints the shape in variable size (i.e. `triangle(5)` is one hash taller and two hashes wider than `triangle(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.2: diamond
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Print a diamond in the shell using hashes and spaces 
 - Prints the shape in variable size (i.e. `diamond(5)` is two hashes taller and two hashes wider than `diamond(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.3: weird_x
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of a weird looking X}** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Print a weird X in the shell using hashes and spaces, mimicing the shape from the book
 - Prints the shape in variable size (i.e. `x(5)` is two hashes taller and two hashes wider than `x(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 - Use timer library to make the X appear to grow in the shell, printing a slightly larger X each time 0.1 seconds passes.
 ### 2.4: box
-**Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shapes rule**<br>‎<br>
-**Program decsription:** <br>
+**Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shape's rule**<br>‎<br>
+**Program description:** <br>
 - Print `length` * `length` box of hashes in the shell, with an X of hashes crossing through the middle of the box
 - Prints the shape in variable size (i.e. `box(5)` is one hash taller and one hash wider than `box(4)`. The rest of the shape is adjusted accordingly)
 - Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
 **Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ `int`)**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
 ### 2.6: to_any 
 **Question in the book:** **Want an extra challenge? Generalize the code for the previous exercise to make a program that converts from any number base-16 or less to any other number base**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Convert any number in any base to its representation of the number in any other base `b`, where the smallest denomination (rightmost unit) represents `number` * `b^0` and the largest is `number` * `b^(max - 1)` (leftmost unit)
 - `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
 
 ## Chapter 3: Arrays
 ### 3.1: student_quartiles
 **Question in the book:** **Write a program that processes an array of student objects and determines the grade quartiles--that is, the grade one would need to score as well as or better than 25% of the students, 50% of the students, and 75% of the students.**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Find the quartiles of a set of student grades.
 - Include `fstream` library to read in `.csv` file
 ### 3.2: median
 **Question in the book:** **Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median]**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Find the highest median out of 3 agents' sales data over 12 months
 - User inputs data
 - Use `qsort()` to sort monthly sales from fiscal year
 - return middle number in sequence or the mean of 2 middle numbers
 ### 3.3: mode
 **Question in the book:** **Write a program that is given an array of integers and determines the mode, which is the number that appears most frequently in the array.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Counts the number of times each number appears in a sequence of numbers, and returns the mode(s) (the number(s) that appear the most frequently) in the form of a `vector`.
 - Use `vector` histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
 **Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and `replaceText` points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
 - Reading in a string from a file
@@ -151,16 +151,16 @@ These are the programs I believe best display my ability to apply the techniques
 ### 4.2: linked_list_numbers
 **Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linke list of this sort.**<br>
 **q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
-- `sumLists()`Adds two linked list numbers together, and returns the sum in the form of linked list
+- `sumLists()` Adds two linked list numbers together, and returns the sum in the form of linked list
 - Includes functions for:
 - Getting user input
 - Converting int number to linked list
 - Deleting lists after use to free up memory
 ### 4.3: linked_list_strings
-**Question in the book:** **Let's create an implementation for strings that uses a linked list of characters instead of dynamically allocated arrays. So we'll have a linked list where the data payload is a single char; this will allow strings to grow without having to re-create the entire string. We'll start by implementing the `append` and `characterAt` functions.** <br>‎<br>
-**Program decsription:** <br>
+**Question in the book:** **Let's create an implementation for strings that uses a linked list of characters instead of dynamically allocated arrays. So we'll have a linked list where the data payload is a single `char`; this will allow strings to grow without having to re-create the entire string. We'll start by implementing the `append` and `characterAt` functions.** <br>‎<br>
+**Program description:** <br>
 - Stores strings as linked lists of characters. 
 - Includes functions for:
 - Appending character to string
@@ -169,7 +169,7 @@ These are the programs I believe best display my ability to apply the techniques
 - Deleting lists after use to free up memory
 ### 4.4: mode_linked_list
 **Question in the book: Design your own: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Use linked list to solve limitation caused by arrays when using histogram, eliminating need to use `vector` class.
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
@@ -177,15 +177,15 @@ These are the programs I believe best display my ability to apply the techniques
 ## Chapter 5: Classes
 ### 5.1: automobile_class
 **Questions in the book: <br>
-q1 Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with `get`/`set` methods for each data member.<br>
-q2 For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years."**<br>‎<br>
-**Program decsription:** <br>
+q1: Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with `get`/`set` methods for each data member.<br>
+q2: For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years."**<br>‎<br>
+**Program description:** <br>
 - First C++ class, mock automobile information class
 - Contains get/set methods for data members, and constructors.
 ### 5.2: student_collection
 **Questions in the book: <br>q1: Take the student record functions from Chapter 4 (addRecord and averageRecord) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
 q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, `myCollection.recordRange(75, 80)` would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Class for a collection of students
 - Includes public methods for:
 - Adding a student
@@ -196,7 +196,7 @@ q2: For the student record class of the previous exercise, add a method `recordR
 ### 5.3: string_class
 **Questions in the book:<br>q1: Take the variable length string functions from Chapter 4 (`append`, `concatenate`, `characterAt`) and use them to create a class for variable-length strings, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
 q2: For the variable-length string class of the previous exercise, replace the `characterAt` method with an overloaded `[]` operator. For example, if `myString` is an object of our class, then `myString[1]` should return the same result as `myString.characterAt(1)`.**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Class for strings as linked list of of characters. 
 - Includes public methods for:
 - Appending an extra character
@@ -210,7 +210,7 @@ q2: For the variable-length string class of the previous exercise, replace the `
 ## Chapter 6: Recursion
 ### 6.0: binary_tree_template
 **Not a question in the book. I made the decision to make a template for a binary tree class** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - My template for basic binary tree
 - Includes methods for: 
 - Making a new tree given amount of levels 
@@ -219,17 +219,17 @@ q2: For the variable-length string class of the previous exercise, replace the `
 - Also includes overloaded assignment operator, destructor, and copy constructor.
 ### 6.1: largest_array_value
 **Not a practice question; just coding along with one of the examples from the chapter.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Finds largest number in an array recursively
 ### 6.2: pos_num_sum
 **Questions in the book: Write a function to compute the sum of just the positive numbers in an array of integers. First, solve the problem using iteration. Then, using the technique shown in the chapter, convert your iterative function to a recursive function.**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Recursively add all of the positive numbers in a linked list, return sum
 ### 6.3: binary_string
 **Questions in the book: <br>
 q1: Consider an array representing a binary string, where every element's data value is `0` or `1`. Write a `bool` function to determine whether the binary string has odd parity (an odd number of 1 bits), or even parity (an even number of 1 bits). Solve the problem first using iteration, then recursion. <br>
 q2: Solve exercise \[`q1`] again, using a linked list instead of an array.**<br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 #### binary_string (array)
 - Store string of `boolean` values in an array, return true if there are an even number of true values, false otherwise
 - Done recursively and iteratively
@@ -240,7 +240,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.**<br>
 **Questions in the book: <br>
 q1: Write a function that is passed an array of integers and a `target` number and returns the number of occurrences of the `target` in the array. Solve the problem first using iteration, then recursion. <br>
 q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 **\*\*Example of head recursion use\*\***
 #### appearance_counter (array)
 - Counts the amount of times a target number appears in an array
@@ -250,7 +250,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Done recursively.
 ### 6.5: heap_binary_tree
 **Question in the book: Some words in programming have more than one common meaning. In `Chapter 4`, we learned about the `heap`, from which we get memory allocated with `new`. The term `heap` also describes a binary tree in which each node value is higher than any in the left or right subtree. Write a recursive function to determine whether a binary tree is a `heap`.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Binary Tree Heap program
 - Includes functions for:
 - Checking if a tree is a heap
@@ -260,7 +260,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Deleting tree after use to free up memory
 ### 6.6: binary_search_tree
 **Question in the book: a `binary search tree` is a binary tree in which each node value is grater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - Class for binary search tree.
 - Includes methods for:
 - Making a basic binary search tree given number of levels
@@ -272,7 +272,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Also includes copy constructor, random tree constructor, and destructor
 ### 6.7: binary_tree_statistics
 **Question in the book: Design your own: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 Class for binary tree
 - Includes methods for:
 - Inserting number into next available spot in tree
@@ -295,7 +295,7 @@ Class for binary tree
 - Variant of the studentColletion class that uses imported list class instead of a linked list to store the studentRecord objects
 ### 7.2: hash_table
 **Question in the book: For the problem \[other question], implement a.solution by implementing an abstract data type that allows an arbitrary number of items to be stored and individual records to be retrieved based on a key value. A generic term for a structure that can efficiently store and retrieve items based on a key value is a symbol table, and common implementations of the symbol table idea are `hash tables` and `binary search trees`.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 - My Hash table template class
 - Includes methods to:
 - Add key-value pairs
@@ -306,11 +306,11 @@ Class for binary tree
 ### 7.3: first_student
 (The original first student program was a modified version of the example in chapter 7, then was later modified along with one of the practice questions)
 **Question in the book: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student: program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 Use policy/strategy design pattern to allow the user to specify the sorting policy for the firstStudent() method.
 ### 7.4: dynamic_features
 **Question in the book: Suppose you are working on a project in which a particular `studentRecord` may need to be augmented with one of the following pieces of data: term paper title, year or enrolment, or a bool indicating whether the student is auditing the class. You won't want to include all of these data fields in the base `studentRecord` class, knowing that in most cases they won't be used. Your first thought is to create three subclasses, each having one of the data fields, with names such as `studentRecordTitle`, `studentRecordYear`, and `studentRecordAudit`. Then you are informed that some students will contain two of these additional data fields or perhaps all three. Creating subclasses for each possible variation is impractical. Find a design pattern that addresses this conundrum, and implement a solution.** <br>‎<br>
-**Program decsription:** <br>
+**Program description:** <br>
 Add on to the studentCollection class from chapter 5. 
 - Student records are now stored in objects with linked lists containing their attributes (grade, name date of birth, etc.), seperated into types. 
 - Includes a builder class that can be used to create student records with custom attributes.
