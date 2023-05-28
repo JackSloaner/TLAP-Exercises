@@ -85,34 +85,34 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 2: Puzzles
 ### 2.1: upside_down_triangle
-**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}** <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}.** <br>‎<br>
 **Program description:** <br>
 - Print an upside down triangle in the shell using hashes and spaces
 - Prints the shape in variable size (i.e. `triangle(5)` is one hash taller and two hashes wider than `triangle(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.2: diamond
-**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}** <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}.** <br>‎<br>
 **Program description:** <br>
 - Print a diamond in the shell using hashes and spaces 
 - Prints the shape in variable size (i.e. `diamond(5)` is two hashes taller and two hashes wider than `diamond(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.3: weird_x
-**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of a weird looking X}** <br>‎<br>
+**Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an elongated "X"}.** <br>‎<br>
 **Program description:** <br>
-- Print a weird X in the shell using hashes and spaces, mimicing the shape from the book
+- Print an elongated X in the shell using hashes and spaces, mimicing the shape from the book
 - Prints the shape in variable size (i.e. `x(5)` is two hashes taller and two hashes wider than `x(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
 - Use timer library to make the X appear to grow in the shell, printing a slightly larger X each time 0.1 seconds passes.
 ### 2.4: box
-**Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shape's rule**<br>‎<br>
+**Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shape's rule.**<br>‎<br>
 **Program description:** <br>
 - Print `length` * `length` box of hashes in the shell, with an X of hashes crossing through the middle of the box
 - Prints the shape in variable size (i.e. `box(5)` is one hash taller and one hash wider than `box(4)`. The rest of the shape is adjusted accordingly)
 - Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
-**Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ `int`)**<br>‎<br>
+**Question in the book:** **If you've learned about binary numbers and how to convert from decimal to binary and the reverse, try writing programs to do those conversions with unlimited length numbers (but you can assume the numbers are small enough to be stored into a standard C++ `int`).**<br>‎<br>
 **Program description:** <br>
 - Convert any integer (up to `__INT_MAX__`) number to binary (base 2). The rightmost unit is `2^0`, then going left, the digits follow as: `2^1`, `2^2`, `2^3`, etc.
 ### 2.6: to_any 
-**Question in the book:** **Want an extra challenge? Generalize the code for the previous exercise to make a program that converts from any number base-16 or less to any other number base**<br>‎<br>
+**Question in the book:** **Want an extra challenge? Generalize the code for the previous exercise to make a program that converts from any number base-16 or less to any other number base.**<br>‎<br>
 **Program description:** <br>
 - Convert any number in any base to its representation of the number in any other base `b`, where the smallest denomination (rightmost unit) represents `number` * `b^0` and the largest is `number` * `b^(max - 1)` (leftmost unit)
 - `max` is calculated in relation to the base and the maximum integer value (`__INT_MAX__`).
@@ -124,7 +124,7 @@ These are the programs I believe best display my ability to apply the techniques
 - Find the quartiles of a set of student grades.
 - Include `fstream` library to read in `.csv` file
 ### 3.2: median
-**Question in the book:** **Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median]**<br>‎<br>
+**Question in the book:** **Rewrite the code that finds the agent with the best monthly sales average so that it finds the agent with the highest median sales. As stated earlier, the median of a set of values is the "one in the middle," ...[explanation of the median].**<br>‎<br>
 **Program description:** <br>
 - Find the highest median out of 3 agents' sales data over 12 months
 - User inputs data
@@ -138,7 +138,7 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and `replaceText` points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
+**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position, for the specified length. The original string is unaffected by the operation.** <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and `replaceText` points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`.**<br>‎<br>
 **Program description:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
@@ -149,8 +149,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Replacing a substring with another string.
 - Deleting lists after use to free up memory
 ### 4.2: linked_list_numbers
-**Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linke list of this sort.**<br>
-**q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum**<br>‎<br>
+**Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linked list of this sort.**<br>
+**q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum.**<br>‎<br>
 **Program description:** <br>
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
 - `sumLists()` Adds two linked list numbers together, and returns the sum in the form of linked list
@@ -168,7 +168,7 @@ These are the programs I believe best display my ability to apply the techniques
 - Removing characters from a string given a position and a number of characters to delete.
 - Deleting lists after use to free up memory
 ### 4.4: mode_linked_list
-**Question in the book: Design your own: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers** <br>‎<br>
+**Question in the book: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers.** <br>‎<br>
 **Program description:** <br>
 - Use linked list to solve limitation caused by arrays when using histogram, eliminating need to use `vector` class.
 - Finds the mode(s) in a linked list of numbers
@@ -178,12 +178,13 @@ These are the programs I believe best display my ability to apply the techniques
 ### 5.1: automobile_class
 **Questions in the book: <br>
 q1: Let's try implementing a class using the basic framework. Consider a class to store the data for an automobile. We'll have three pieces of data: a manufacturer name and a model name, both strings, and a model year, an integer. Create a class with `get`/`set` methods for each data member.<br>
-q2: For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years."**<br>‎<br>
+q2: For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years.**<br>‎<br>
 **Program description:** <br>
 - First C++ class, mock automobile information class
 - Contains get/set methods for data members, and constructors.
+- Contains method for complete description of the car, as well as a method to return the age of the car in years.
 ### 5.2: student_collection
-**Questions in the book: <br>q1: Take the student record functions from Chapter 4 (addRecord and averageRecord) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
+**Questions in the book: <br>q1: Take the student record functions from Chapter 4 (`addRecord` and `averageRecord`) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
 q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, `myCollection.recordRange(75, 80)` would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
 **Program description:** <br>
 - Class for a collection of students
@@ -259,7 +260,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Making a random binary tree
 - Deleting tree after use to free up memory
 ### 6.6: binary_search_tree
-**Question in the book: a `binary search tree` is a binary tree in which each node value is grater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
+**Question in the book: a `binary search tree` is a binary tree in which each node value is greater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
 **Program description:** <br>
 - Class for binary search tree.
 - Includes methods for:
@@ -271,7 +272,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Printing tree visually (printTree())
 - Also includes copy constructor, random tree constructor, and destructor
 ### 6.7: binary_tree_statistics
-**Question in the book: Design your own: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
+**Question in the book: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
 **Program description:** <br>
 Class for binary tree
 - Includes methods for:
@@ -294,7 +295,7 @@ Class for binary tree
 **Question in the book: Rewrite our studentCollection functions from Chapter 4 (`addRecord` and `averageRecord`) so that instead of directly implementing a linked list, you use a class from the C++ library.**
 - Variant of the studentColletion class that uses imported list class instead of a linked list to store the studentRecord objects
 ### 7.2: hash_table
-**Question in the book: For the problem \[other question], implement a.solution by implementing an abstract data type that allows an arbitrary number of items to be stored and individual records to be retrieved based on a key value. A generic term for a structure that can efficiently store and retrieve items based on a key value is a symbol table, and common implementations of the symbol table idea are `hash tables` and `binary search trees`.** <br>‎<br>
+**Question in the book: For the problem \[other question], implement a solution by implementing an abstract data type that allows an arbitrary number of items to be stored and individual records to be retrieved based on a key value. A generic term for a structure that can efficiently store and retrieve items based on a key value is a symbol table, and common implementations of the symbol table idea are `hash tables` and `binary search trees`.** <br>‎<br>
 **Program description:** <br>
 - My Hash table template class
 - Includes methods to:
@@ -304,8 +305,8 @@ Class for binary tree
 - Constructor and destructor
 - Includes hashNode class as linked list to deal with collisions
 ### 7.3: first_student
-(The original first student program was a modified version of the example in chapter 7, then was later modified along with one of the practice questions)
-**Question in the book: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student: program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
+(The original first student program was a modified version of the example in chapter 7, then was later modified along with one of the practice questions)<br>
+**Question in the book: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student" program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
 **Program description:** <br>
 Use policy/strategy design pattern to allow the user to specify the sorting policy for the firstStudent() method.
 ### 7.4: dynamic_features
