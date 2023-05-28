@@ -104,7 +104,7 @@ These are the programs I believe best display my ability to apply the techniques
 **Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shapes rule**<br>‎<br>
 **Program decsription:** <br>
 - Print `length` * `length` box of hashes in the shell, with an X of hashes crossing through the middle of the box
-- Prints the shape in variable size (i.e. `box(5)` is two hashes taller and two hashes wider than `box(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
+- Prints the shape in variable size (i.e. `box(5)` is one hash taller and one hash wider than `box(4)`. The rest of the shape is adjusted accordingly)
 - Use timer library to make the box appear to grow in the shell, printing a slightly larger box each time 0.1 seconds passes.
 - Adapt algorithm to deal with even and odd values of length slightly differently
 ### 2.5: to_binary
@@ -138,7 +138,7 @@ These are the programs I believe best display my ability to apply the techniques
 
 ## Chapter 4: Pointers
 ### 4.1: dynamically_allocated_strings
-**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and replaceText points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
+**Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position for the specified length. The original string is unaffected by the operation.**, <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and `replaceText` points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`**<br>‎<br>
 **Program decsription:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Includes functions for
@@ -291,10 +291,10 @@ Class for binary tree
 
 ## Chapter 7: Code Reuse
 ### 7.1: list_students
-**Question in the book:**
+**Question in the book: Rewrite our studentCollection functions from Chapter 4 (`addRecord` and `averageRecord`) so that instead of directly implementing a linked list, you use a class from the C++ library.**
 - Variant of the studentColletion class that uses imported list class instead of a linked list to store the studentRecord objects
 ### 7.2: hash_table
-**Question in the book:** <br>‎<br>
+**Question in the book: For the problem \[other question], implement a.solution by implementing an abstract data type that allows an arbitrary number of items to be stored and individual records to be retrieved based on a key value. A generic term for a structure that can efficiently store and retrieve items based on a key value is a symbol table, and common implementations of the symbol table idea are `hash tables` and `binary search trees`.** <br>‎<br>
 **Program decsription:** <br>
 - My Hash table template class
 - Includes methods to:
@@ -304,11 +304,12 @@ Class for binary tree
 - Constructor and destructor
 - Includes hashNode class as linked list to deal with collisions
 ### 7.3: first_student
-**Question in the book:** <br>‎<br>
+(The original first student program was a modified version of the example in chapter 7, then was later modified along with one of the practice questions)
+**Question in the book: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student: program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
 **Program decsription:** <br>
 Use policy/strategy design pattern to allow the user to specify the sorting policy for the firstStudent() method.
 ### 7.4: dynamic_features
-**Question in the book:** <br>‎<br>
+**Question in the book: Suppose you are working on a project in which a particular `studentRecord` may need to be augmented with one of the following pieces of data: term paper title, year or enrolment, or a bool indicating whether the student is auditing the class. You won't want to include all of these data fields in the base `studentRecord` class, knowing that in most cases they won't be used. Your first thought is to create three subclasses, each having one of the data fields, with names such as `studentRecordTitle`, `studentRecordYear`, and `studentRecordAudit`. Then you are informed that some students will contain two of these additional data fields or perhaps all three. Creating subclasses for each possible variation is impractical. Find a design pattern that addresses this conundrum, and implement a solution.** <br>‎<br>
 **Program decsription:** <br>
 Add on to the studentCollection class from chapter 5. 
 - Student records are now stored in objects with linked lists containing their attributes (grade, name date of birth, etc.), seperated into types. 
