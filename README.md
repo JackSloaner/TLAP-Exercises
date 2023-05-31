@@ -175,8 +175,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 - Highlighted functions:
-- `findMode`: Using reference to linked list of modes, updates to point to the mode(s) of the array
-- `updateHistogram`: Updating linked list histogram by either adding new number or incrementing the existing number's count.
+  - `findMode`: Using reference to linked list of modes, updates to point to the mode(s) of the array
+  - `updateHistogram`: Updating linked list histogram by either adding new number or incrementing the existing number's count.
 
 ## Chapter 5: Classes
 ### 5.1: automobile_class
