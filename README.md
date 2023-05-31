@@ -13,10 +13,10 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 ## How to use
 1. Clone this repository onto your local machine
 2. To run the programs as they are already set up in `int main()`, simply navigate to the chosen program's file, in which you will find a pre-compiled executable file, enter `./{filename}` into the command line to run the program
-3. (optional) If you want to make changes to the code in `int main()` to test out the different functions in a given program, you will have to install a C++ compiler to compile and execute your new code. Here are download links for different operating systems:
-- [Windows](https://sourceforge.net/projects/mingw/): Install the latest supported release.
+3. (optional) If you want to make changes to the code in `int main()` to test out the different functions in a given program, you will first have to install a C++ compiler to compile and execute your new code. Here are the steps for the different operating systems:
+- Windows: Install the latest supported release [here](https://sourceforge.net/projects/mingw/).
 - Mac: Enter the following line into your command line to download Xcode command line tools: `xcode-select --install`.
-- [Linux](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/): Follow outlined steps in this article
+- Linux: Follow outlined steps in this [article](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/)
 4. (optional) Once you have dowloaded the compiler, navigate to the program you would like to edit. Once you have made your changes, enter `g++ {filename.cpp}` into the command line to compile code. To run your new code, enter `./a.out` into the command line.
 
 ## Highlighted Programs
@@ -88,17 +88,17 @@ These are the programs I believe best display my ability to apply the techniques
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an upside down triangle}.** <br>‎<br>
 **Program description:** <br>
 - Print an upside down triangle in the shell using hashes and spaces
-- Prints the shape in variable size (i.e. `triangle(5)` is one hash taller and two hashes wider than `triangle(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
+- Prints the shape in variable size (i.e. `triangle(5)` is one hash taller and two hashes wider than `triangle(4)` since it is a dually symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.2: diamond
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Deptiction of a diamond shape}.** <br>‎<br>
 **Program description:** <br>
 - Print a diamond in the shell using hashes and spaces 
-- Prints the shape in variable size (i.e. `diamond(5)` is two hashes taller and two hashes wider than `diamond(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
+- Prints the shape in variable size (i.e. `diamond(5)` is two hashes taller and two hashes wider than `diamond(4)` since it is a dually symmetrical shape. The rest of the shape is adjusted accordingly)
 ### 2.3: weird_x
 **Question in the book:** **Using only single-character output statements that output a hash mark, a space, or an end of line, write a program that produces the following shape: {Depiction of an elongated "X"}.** <br>‎<br>
 **Program description:** <br>
 - Print an elongated X in the shell using hashes and spaces, mimicing the shape from the book
-- Prints the shape in variable size (i.e. `x(5)` is two hashes taller and two hashes wider than `x(4)` since it is a symmetrical shape. The rest of the shape is adjusted accordingly)
+- Prints the shape in variable size (i.e. `x(5)` is two hashes taller and two hashes wider than `x(4)` since it is a dually symmetrical shape. The rest of the shape is adjusted accordingly)
 - Use timer library to make the X appear to grow in the shell, printing a slightly larger X each time 0.1 seconds passes.
 ### 2.4: box
 **Question in the book:** **Design your own: Think up your own symetrical pattern of hash marks, and see whether you can write a program to produce it that follows the shape's rule.**<br>‎<br>
@@ -141,38 +141,42 @@ These are the programs I believe best display my ability to apply the techniques
 **Questions in the book:** (For context, the original string program was just made from coding along with the examples in the chapter, modifications were made while doing the practice questions). <br>**q1: For our dynamically allocated strings, create a function `substring` that takes three parameters: An `arrayString`, a starting position integer, and an integer length of characters. The function returns a pointer to a new dynamically allocated string array. This string array contains the characters in the original string, starting at the specified position, for the specified length. The original string is unaffected by the operation.** <br> **q2: For our dynamically allocated strings, create a function `replaceString` that takes three paramaters, each of type `arrayString`: source, target, and replaceText. For example, if source points to an array containing `abcdabee`, target points to `ab`, and `replaceText` points to `xyz`, then when the function ends, source should point to an array containing `xyzdxyzee`.**<br>‎<br>
 **Program description:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
-- Includes functions for
-- Reading in a string from a file
-- Deleting a string
-- Printing a string
-- Getting a substring
-- Replacing a substring with another string.
-- Deleting lists after use to free up memory
+- Highlighted functions:
+  - `readFile`: Reading in a string from a file
+  - `deleteStr`: Deleting a string
+  - `printString`: Printing a string
+  - `subString`: Getting a substring
+  - `replaceText`: Replacing a substring with another string.
+  - `deleteList`: Deleting position lists after use to free up memory
 ### 4.2: linked_list_numbers
 **Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linked list of this sort.**<br>
 **q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum.**<br>‎<br>
 **Program description:** <br>
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
-- `sumLists()` Adds two linked list numbers together, and returns the sum in the form of linked list
-- Includes functions for:
-- Getting user input
-- Converting int number to linked list
-- Deleting lists after use to free up memory
+
+- Highlighted functions:
+  - `sumLists()` Adding two linked list numbers together, returning the sum in the form of linked list
+  - `userPrompt`: Getting user input
+  - `intToList`: Converting int number to linked list
+  - `deleteList`: Deleting lists after use to free up memory
 ### 4.3: linked_list_strings
 **Question in the book:** **Let's create an implementation for strings that uses a linked list of characters instead of dynamically allocated arrays. So we'll have a linked list where the data payload is a single `char`; this will allow strings to grow without having to re-create the entire string. We'll start by implementing the `append` and `characterAt` functions.** <br>‎<br>
 **Program description:** <br>
 - Stores strings as linked lists of characters. 
-- Includes functions for:
-- Appending character to string
-- Concatenating string to another string
-- Removing characters from a string given a position and a number of characters to delete.
-- Deleting lists after use to free up memory
+- Highlighted functions:
+  - `append`: Appending character to string
+  - `concat`: Concatenating string to another string
+  - `removeChars`: Removing characters from a string given a position and a number of characters to delete.
+  - `deleteList`: Deleting lists after use to free up memory
 ### 4.4: mode_linked_list
 **Question in the book: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers.** <br>‎<br>
 **Program description:** <br>
 - Use linked list to solve limitation caused by arrays when using histogram, eliminating need to use `vector` class.
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
+- Highlighted functions:
+- `findMode`: Using reference to linked list of modes, updates to point to the mode(s) of the array
+- `updateHistogram`: Updating linked list histogram by either adding new number or incrementing the existing number's count.
 
 ## Chapter 5: Classes
 ### 5.1: automobile_class
