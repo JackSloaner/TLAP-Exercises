@@ -142,12 +142,12 @@ These are the programs I believe best display my ability to apply the techniques
 **Program description:** <br>
 - Stores strings as a struct containing a pointer to the string (array of characters), and its length.
 - Highlighted functions:
-  - `readFile`: Reading in a string from a file
-  - `deleteStr`: Deleting a string
-  - `printString`: Printing a string
-  - `subString`: Getting a substring
-  - `replaceText`: Replacing a substring with another string.
-  - `deleteList`: Deleting position lists after use to free up memory
+  - `readFile`: Read in a string from a file
+  - `deleteStr`: Delete a string
+  - `printString`: Print a string
+  - `subString`: Get a substring
+  - `replaceText`: Replace a substring with another string.
+  - `deleteList`: Delete position lists after use to free up memory
 ### 4.2: linked_list_numbers
 **Questions in the book:**<br> **q1: Imagine a linked list where instead of the node storing a character, the node stores a digit: an int in the range 0-9. We could represent positive numbers of any size using such a linked list; the number 149, for example would be a linked list in which the first node stores a 1, the second a 4, and the third a 9. Write a function `intToList` that takes an integer value and produces a linked list of this sort.**<br>
 **q2: For the digit list of the previous exercise, write a function that takes two such lists and produces a new list representing their sum.**<br>‎<br>
@@ -155,19 +155,19 @@ These are the programs I believe best display my ability to apply the techniques
 - Numbers are represented with linked lists, each node representing a digit of the number, ascending in order of magnitude
 
 - Highlighted functions:
-  - `sumLists()` Adding two linked list numbers together, returning the sum in the form of linked list
-  - `userPrompt`: Getting user input
-  - `intToList`: Converting int number to linked list
-  - `deleteList`: Deleting lists after use to free up memory
+  - `sumLists()` Add two linked list numbers together, returning the sum in the form of linked list
+  - `userPrompt`: Get user input
+  - `intToList`: Convert int number to linked list
+  - `deleteList`: Delete lists after use to free up memory
 ### 4.3: linked_list_strings
 **Question in the book:** **Let's create an implementation for strings that uses a linked list of characters instead of dynamically allocated arrays. So we'll have a linked list where the data payload is a single `char`; this will allow strings to grow without having to re-create the entire string. We'll start by implementing the `append` and `characterAt` functions.** <br>‎<br>
 **Program description:** <br>
 - Stores strings as linked lists of characters. 
 - Highlighted functions:
-  - `append`: Appending character to string
-  - `concat`: Concatenating string to another string
-  - `removeChars`: Removing characters from a string given a position and a number of characters to delete.
-  - `deleteList`: Deleting lists after use to free up memory
+  - `append`: Append character to string
+  - `concat`: Concatenate string to another string
+  - `removeChars`: Remove characters from a string given a position and a number of characters to delete.
+  - `deleteList`: Delete lists after use to free up memory
 ### 4.4: mode_linked_list
 **Question in the book: Take a problem that you already know how to solve using an array but that is limited by the size of the array. Rewrite the code to remove that limitation using pointers.** <br>‎<br>
 **Program description:** <br>
@@ -175,8 +175,8 @@ These are the programs I believe best display my ability to apply the techniques
 - Finds the mode(s) in a linked list of numbers
 - Use linked list histogram to keep track of the numbers that appear in the sequence and the amount of times they've appeared
 - Highlighted functions:
-  - `findMode`: Using reference to linked list of modes, updates to point to the mode(s) of the array
-  - `updateHistogram`: Updating linked list histogram by either adding new number or incrementing the existing number's count.
+  - `findMode`: Use reference to linked list of modes, updates to point to the mode(s) of the array
+  - `updateHistogram`: Update linked list histogram by either adding new number or incrementing the existing number's count.
 
 ## Chapter 5: Classes
 ### 5.1: automobile_class
@@ -185,19 +185,22 @@ q1: Let's try implementing a class using the basic framework. Consider a class t
 q2: For our automobile class from the previous exercise, add a support method that returns a complete description of the automobile object as a formatted string, such as, `1957 Chevrolet Impala`. Add a support method that returns the age of the automobile in years.**<br>‎<br>
 **Program description:** <br>
 - First C++ class, mock automobile information class
-- Contains get/set methods for data members, and constructors.
-- Contains method for complete description of the car, as well as a method to return the age of the car in years.
+- Public methods:
+  - `getManufacturer`, `getModel`, `getYear`: Get/set methods for data members.
+  - `getAge`: Get age of the car in years, calculated on method call.
+  - `getCar`: Get full description of the car.
+  - `automobile`: Class constructor.
 ### 5.2: student_collection
 **Questions in the book: <br>q1: Take the student record functions from Chapter 4 (`addRecord` and `averageRecord`) and use them to create a class representing a collection of student records, as before, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
 q2: For the student record class of the previous exercise, add a method `recordRange` that takes a low grade and a high grade as parameters and returns a new collection consisting of the records in that range (the original collection is unaffected). For example, `myCollection.recordRange(75, 80)` would return a collection of all records with grades in the range 75-80 inclusive.**<br>‎<br>
 **Program description:** <br>
 - Class for a collection of students
-- Includes public methods for:
-- Adding a student
-- Getting the average grade
-- Getting a student by `id`
-- Getting a collection of students within a grade range
-- Also includes overloaded assignment operator, destructor, and copy constructor.
+- Public methods:
+  - `addRecord `Add a student
+  - `averageRecord` Get the average grade
+  - `getStudentWithID` Get a student by `id`
+  - `recordRange` Get a collection of students within a grade range
+  - Overloaded assignment operator, destructor, constructor, and copy constructor.
 ### 5.3: string_class
 **Questions in the book:<br>q1: Take the variable length string functions from Chapter 4 (`append`, `concatenate`, `characterAt`) and use them to create a class for variable-length strings, making sure to implement all necessary constructors, a destructor, and an overloaded assignment operator.<br>
 q2: For the variable-length string class of the previous exercise, replace the `characterAt` method with an overloaded `[]` operator. For example, if `myString` is an object of our class, then `myString[1]` should return the same result as `myString.characterAt(1)`.**<br>‎<br>
