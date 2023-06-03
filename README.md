@@ -223,10 +223,10 @@ q2: For the variable-length string class of the previous exercise, replace the `
 **Program description:** <br>
 - My template for basic binary tree
 - Public methods: 
-  - Making a new tree given amount of levels 
-  - Printing the tree 
-  - Inserting a number
-  - Also includes overloaded assignment operator, destructor, and copy constructor.
+  - `makeNewTree`: Make a new tree of random numbers given amount of levels 
+  - `printTree`: Print the tree 
+  - `insertNum`: Insert a number
+  - Overloaded assignment operator, destructor, and copy constructor.
 ### 6.1: largest_array_value
 **Not a practice question; just coding along with one of the examples from the chapter.** <br>‎<br>
 **Program description:** <br>
@@ -262,12 +262,10 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 **Question in the book: Some words in programming have more than one common meaning. In `Chapter 4`, we learned about the `heap`, from which we get memory allocated with `new`. The term `heap` also describes a binary tree in which each node value is higher than any in the left or right subtree. Write a recursive function to determine whether a binary tree is a `heap`.** <br>‎<br>
 **Program description:** <br>
 - Binary Tree Heap program
-- Includes functions for:
-- Checking if a tree is a heap
-- Making a heap
-- Printing binary tree
-- Making a random binary tree
-- Deleting tree after use to free up memory
+- Highlighted functions:
+  - `isHeap`: Check if a tree is a heap
+  - `makeHeap`: Make a heap
+  - Deleting tree after use to free up memory
 ### 6.6: binary_search_tree
 **Question in the book: a `binary search tree` is a binary tree in which each node value is greater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
 **Program description:** <br>
