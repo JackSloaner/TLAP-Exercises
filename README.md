@@ -206,25 +206,27 @@ q2: For the student record class of the previous exercise, add a method `recordR
 q2: For the variable-length string class of the previous exercise, replace the `characterAt` method with an overloaded `[]` operator. For example, if `myString` is an object of our class, then `myString[1]` should return the same result as `myString.characterAt(1)`.**<br>‎<br>
 **Program description:** <br>
 - Class for strings as linked list of of characters. 
-- Includes public methods for:
-- Appending an extra character
-- Concatenating another string of the same class
-- Deleting a certain character out of a string,
-- Deleting the last character in the string
-- Finding character at a given index
-- Getting substrings. 
-- Also includes destructor, copy constructor, overloaded assignment operator and overloaded `[]` operator.
+- Public methods:
+  - `appendChar`: Append an extra character
+  - `concatenate`: Concatenate another string of the same class
+  - `deleteChar`: Delete a certain character out of a string,
+  - `deleteLastChar`: Delete the last character in the string
+  - `characterAt`: Find character at a given index
+  - `subStr`: Get substring given a position and a number of characters. 
+  - Destructor, copy constructor, overloaded assignment operator and overloaded `[]` operator.
+- Highlighted private methods:
+  - `deepCopy`: Create a deep copy of `stringC` object.
 
 ## Chapter 6: Recursion
 ### 6.0: binary_tree_template
 **Not a question in the book. I made the decision to make a template for a binary tree class** <br>‎<br>
 **Program description:** <br>
 - My template for basic binary tree
-- Includes methods for: 
-- Making a new tree given amount of levels 
-- Printing the tree 
-- Inserting a number
-- Also includes overloaded assignment operator, destructor, and copy constructor.
+- Public methods: 
+  - Making a new tree given amount of levels 
+  - Printing the tree 
+  - Inserting a number
+  - Also includes overloaded assignment operator, destructor, and copy constructor.
 ### 6.1: largest_array_value
 **Not a practice question; just coding along with one of the examples from the chapter.** <br>‎<br>
 **Program description:** <br>
