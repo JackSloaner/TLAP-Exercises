@@ -270,14 +270,17 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 **Question in the book: a `binary search tree` is a binary tree in which each node value is greater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
 **Program description:** <br>
 - Class for binary search tree.
-- Includes methods for:
-- Making a basic binary search tree given number of levels
-- verifying if tree is in fact binary search using recursion (`isBinarySearch()`)
-- Making random tree given a number levels to test `isBS()` (`makeRandTree()`)
-- Inserting any given number into tree at the proper place to maintain binary search \*\***main display of recursion**\*\*
-- Printing numbers in tree in a sequence (primitivePrint())
-- Printing tree visually (printTree())
-- Also includes copy constructor, random tree constructor, and destructor
+- Public methods:
+  - `makeBS`: Make a basic binary search tree given number of levels
+  - `isBS`: Verify if tree is in fact binary search using recursion
+  - `makeRandTree`: Make random tree given a number levels to test `isBS()` (`makeRandTree()`)
+  - `insertNum`: Insert any given number into tree at the proper place to maintain binary search \*\***main display of recursion**\*\*
+  - `primitivePrint`: Print numbers of the tree in a sequence
+  - `printTree`: Print tree visually
+  - Copy constructor, and destructor
+- Higlighted private methods:
+  - `insertNum` (private): Helper function for public `inserNum` method. Insert new number and return the updated amount of levels in the tree. 
+  - `newLevel`: 
 ### 6.7: binary_tree_statistics
 **Question in the book: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
 **Program description:** <br>
@@ -295,7 +298,7 @@ Class for binary tree
 
 
 \*\***Highlighted helper function**\*\*:
-- `mergeSort`: Sorts an array of integers using merge sort, returns a pointer to the sorted array
+  - `mergeSort`: Sorts an array of integers using merge sort, returns a pointer to the sorted array
 
 ## Chapter 7: Code Reuse
 ### 7.1: list_students
