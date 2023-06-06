@@ -11,7 +11,7 @@ struct student {
   int  grade;
 };
 
-struct dataa {
+struct dataa { // Struct for readFile()
   string name;
   string grade;
 };
