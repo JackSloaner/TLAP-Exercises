@@ -16,7 +16,7 @@ Completing these exercises has been incredibly helpful in my learning journey, n
 3. (optional) If you want to make changes to the code in `int main()` to test out the different functions in a given program, you will first have to install a C++ compiler to compile and execute your new code. Here are the steps for the different operating systems:
 - Windows: Install the latest supported release [here](https://sourceforge.net/projects/mingw/).
 - Mac: Enter the following line into your command line to download Xcode command line tools: `xcode-select --install`.
-- Linux: Follow outlined steps in this [article](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/)
+- Linux: Follow outlined steps in this [article](https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/).
 4. (optional) Once you have dowloaded the compiler, navigate to the program you would like to edit. Once you have made your changes, enter `g++ {filename.cpp}` into the command line to compile code. To run your new code, enter `./a.out` into the command line.
 
 ## Highlighted Programs
