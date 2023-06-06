@@ -150,7 +150,7 @@ void bSearchTree::printTree(){
     
     cout << "\n";
 
-    ptrList nextLevel = newLevel(curLevel); // Check here for bug
+    ptrList nextLevel = newLevel(curLevel);
     deleteList(curLevel);
     curLevel = nextLevel;
   }
