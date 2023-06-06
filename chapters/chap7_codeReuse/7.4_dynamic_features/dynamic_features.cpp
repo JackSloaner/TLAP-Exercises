@@ -110,7 +110,12 @@ class builder{
     void addDOB(string date);
     void addIsAudit(bool isAudit);
     void addPaperTitle(string Title);
-    void deleteRec(){delete _stuRec;}
+    void deleteRec(){
+      if (_stuRec){
+      delete _stuRec;
+      _stuRec = NULL;
+      }
+    }
     studentRecord *getRecord(){
       return _stuRec;
     }
@@ -122,6 +127,7 @@ class builder{
 };
 
 builder::builder(){
+  deleteRec();
   _stuRec = new studentRecord;
 }
 
