@@ -265,7 +265,7 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 - Highlighted functions:
   - `isHeap`: Check if a tree is a heap
   - `makeHeap`: Make a heap
-  - Deleting tree after use to free up memory
+  - `deleteTree`: Delete tree after use to free up memory
 ### 6.6: binary_search_tree
 **Question in the book: a `binary search tree` is a binary tree in which each node value is greater than any value in that node's left subtree but less than any value in the node's right subtree. Write a recursive function to determine whether a binary tree is a `binary search tree`.** <br>‎<br>
 **Program description:** <br>
@@ -286,17 +286,17 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
 **Program description:** <br>
 Class for binary tree
 - Public methods:
-- `insertNum`: Insert number into next available spot in tree
-- `avgAllNums`: Find the mean of all numbers in the tree
-- `medianAllNums`: Find the median of all numbers in the tree
-- `modeAllNums`: Find the mode(s) of all numbers in the tree. Return pointer to an int array
-- `printModes`: Print modes. Takes pointer to int array as argument
-- `primitivePrint`: Print numbers in tree in sequence
-- `printTree`: Print the tree visually
-- Overloaded assignment operator, Base Constructor, Binary Tree constructor with given levels, Destructor
+  - `insertNum`: Insert number into next available spot in tree
+  - `avgAllNums`: Find the mean of all numbers in the tree
+  - `medianAllNums`: Find the median of all numbers in the tree
+  - `modeAllNums`: Find the mode(s) of all numbers in the tree. Return pointer to an int array
+  - `printModes`: Print modes. Takes pointer to int array as argument
+  - `primitivePrint`: Print numbers in tree in sequence
+  - `printTree`: Print the tree visually
+  - Overloaded assignment operator, Base Constructor, Binary Tree constructor with given levels, Destructor
 
 
-\*\***Highlighted helper function**\*\*:
+- \*\***Highlighted Private Method**\*\*:
   - `mergeSort`: Sorts an array of integers using merge sort, returns a pointer to the sorted array
 
 ## Chapter 7: Code Reuse
@@ -307,17 +307,26 @@ Class for binary tree
 **Question in the book: For the problem \[other question], implement a solution by implementing an abstract data type that allows an arbitrary number of items to be stored and individual records to be retrieved based on a key value. A generic term for a structure that can efficiently store and retrieve items based on a key value is a symbol table, and common implementations of the symbol table idea are `hash tables` and `binary search trees`.** <br>‎<br>
 **Program description:** <br>
 - My Hash table template class
-- Includes methods to:
-- Add key-value pairs
-- Get values by key
-- Hash function
-- Constructor and destructor
+- Public methods:
+  - `addPair`: Add key-value pairs
+  - `get`: Get values by key
+  - Constructor and destructor
+- Highlighted private methods:
+  - `hashFunc`: Hash function
 - Includes hashNode class as linked list to deal with collisions
 ### 7.3: first_student
-(The original first student program was a modified version of the example in chapter 7, then was later modified along with one of the practice questions)<br>
-**Question in the book: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student" program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
+**Questions in the book:
+q1 (in chapter): At a particular achool, each class has a designated "first student" who is responsible for maintaining order in the classroom if the teacher has to leave the room. Originally, this title was bestowed upon the student with the highest grade, but now some teachers think the first student should be the student with the greatest seniority, which means the lowest student ID number, as they are assigned sequentially. Another faction of teachers thinks the first student tradition is silly and intends to protest by simply choosing the student whose name appears first in th alphabetical class roll. Our task is to modify the student collection class, adding a method to retrieve the first student from the collection, while accomodating the selection criteria of the various teacher groups. 
+q2: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student" program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
 **Program description:** <br>
-Use policy/strategy design pattern to allow the user to specify the sorting policy for the firstStudent() method.
+- Add on to the `stuCo` class from chapter 5
+- Use policy/strategy design pattern to allow the user to specify the sorting policy for the `firstStudent` method.
+- Public methods: 
+  - *All methods from [5.2: student_collection](#52-student_collection)*
+  - `setCurrentPolicy`: Set the sorting policy for finding the first student
+  - `firstStudent`: Find and return `studentRecord` object of "First student", using the current policy
+- Highlighted private methods:
+  - `fsHighGrade`, `fsLowStuNum`, `fsAlphabetical`: The first student retrieval methods for the different "teacher policies".
 ### 7.4: dynamic_features
 **Question in the book: Suppose you are working on a project in which a particular `studentRecord` may need to be augmented with one of the following pieces of data: term paper title, year or enrolment, or a bool indicating whether the student is auditing the class. You won't want to include all of these data fields in the base `studentRecord` class, knowing that in most cases they won't be used. Your first thought is to create three subclasses, each having one of the data fields, with names such as `studentRecordTitle`, `studentRecordYear`, and `studentRecordAudit`. Then you are informed that some students will contain two of these additional data fields or perhaps all three. Creating subclasses for each possible variation is impractical. Find a design pattern that addresses this conundrum, and implement a solution.** <br>‎<br>
 **Program description:** <br>
