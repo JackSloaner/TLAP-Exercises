@@ -315,7 +315,7 @@ Class for binary tree
   - `hashFunc`: Hash function
 - Includes hashNode class as linked list to deal with collisions
 ### 7.3: first_student
-**Questions in the book:
+**Questions in the book: <br>
 q1 (in chapter): At a particular achool, each class has a designated "first student" who is responsible for maintaining order in the classroom if the teacher has to leave the room. Originally, this title was bestowed upon the student with the highest grade, but now some teachers think the first student should be the student with the greatest seniority, which means the lowest student ID number, as they are assigned sequentially. Another faction of teachers thinks the first student tradition is silly and intends to protest by simply choosing the student whose name appears first in th alphabetical class roll. Our task is to modify the student collection class, adding a method to retrieve the first student from the collection, while accomodating the selection criteria of the various teacher groups. 
 q2: A complaint offered against the policy/strategy pattern is that it requires exposing some internals of the class, such as types. Modify the "first student" program from earlier in this chapter so that the policy functions are all stored within the class and are chosen by passing a code value (of a new, enumerated type for example), instead of passing the policy function itself.** <br>‎<br>
 **Program description:** <br>
@@ -330,8 +330,19 @@ q2: A complaint offered against the policy/strategy pattern is that it requires 
 ### 7.4: dynamic_features
 **Question in the book: Suppose you are working on a project in which a particular `studentRecord` may need to be augmented with one of the following pieces of data: term paper title, year or enrolment, or a bool indicating whether the student is auditing the class. You won't want to include all of these data fields in the base `studentRecord` class, knowing that in most cases they won't be used. Your first thought is to create three subclasses, each having one of the data fields, with names such as `studentRecordTitle`, `studentRecordYear`, and `studentRecordAudit`. Then you are informed that some students will contain two of these additional data fields or perhaps all three. Creating subclasses for each possible variation is impractical. Find a design pattern that addresses this conundrum, and implement a solution.** <br>‎<br>
 **Program description:** <br>
-Add on to the studentCollection class from chapter 5. 
-- Student records are now stored in objects with linked lists containing their attributes (grade, name date of birth, etc.), seperated into types. 
+- Add on to the studentCollection class from chapter 5. 
+- Student records are now stored in objects (rather than structs) with linked lists containing their attributes (grade, name date of birth, etc.), seperated into types. 
 - Includes a builder class that can be used to create student records with custom attributes.
-- The studentCollection (`stuCo`) class can read in a csv file and create student records from it. Also includes deep copy constructor and overloaded assignment operator.
-- Contains modified methods from the original stuCo class that work with the new builder and studentrecord classes, such as: averageRecord, recordRange, as well as the overloaded assignment operator and deep copy constructor.
+- The studentCollection (`stuCo`) class can read in a csv file and create student records from it. 
+- Public methods for `stuCo` Class:
+  - *All methods from [5.2: student_collection](#52-student_collection), modified to fit new attribute structure*
+  - Deep copy constructor, Destructor, and Overloaded assignment operator.
+- Public methods for `Builder` Class:
+  - `addDefaults`: Add default attributes for `studentRecord` (Name, Grade, Student ID)
+  - `addName`, `addGrade`, `addID`, `addDOB`, `addIsAudit`, `addPaperTitle`: Set methods for all the different possible attributes of `studentRecord`.
+  - `reset`: Create new `studentRecord` object
+  - `deleteRec`: delete current `studentRecord` object
+  - Constructor, Default Attribute Constructor, Destructor
+- Public methods for `studentRecord` Class: 
+  - `getIntVal`, `getStringVal`, `getBoolVal`: Get methods for the different `studentRecord` attribute types.
+  - Constructor, Destructor
