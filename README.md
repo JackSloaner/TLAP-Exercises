@@ -277,24 +277,23 @@ q2: Solve exercise \[`q1`] again, using a linked list instead of an array.** <br
   - `insertNum`: Insert any given number into tree at the proper place to maintain binary search \*\***main display of recursion**\*\*
   - `primitivePrint`: Print numbers of the tree in a sequence
   - `printTree`: Print tree visually
-  - Copy constructor, and destructor
+  - Base Constructor, Random tree Constructor with given levels, Binary Search Tree constructor with given levels, Destructor.
 - Higlighted private methods:
   - `insertNum` (private): Helper function for public `inserNum` method. Insert new number and return the updated amount of levels in the tree. 
-  - `newLevel`: 
+  - `newLevel`: Helper function for public `printTree` function. Create list representing the next level of a tree given the `ptrList` of a current level.
 ### 6.7: binary_tree_statistics
 **Question in the book: Consider basic statistical questions you can ask for a set of numerical values, such as average, median, mode, and so forth. Attempt to write recursive functions to compute those statistics for a binary tree of integers. Some are easier to write than others. Why?** <br>‎<br>
 **Program description:** <br>
 Class for binary tree
-- Includes methods for:
-- Inserting number into next available spot in tree
-- Finding the mean of all numbers in the tree
-- Finding the median of all numbers in the tree
-- Finding the mode(s) of all numbers in the tree
-- Print modes
-- Print numbers in tree in sequence
-- Printing the tree visually
-- Overloaded assignment operator
-- Constructor and destructor
+- Public methods:
+- `insertNum`: Insert number into next available spot in tree
+- `avgAllNums`: Find the mean of all numbers in the tree
+- `medianAllNums`: Find the median of all numbers in the tree
+- `modeAllNums`: Find the mode(s) of all numbers in the tree. Return pointer to an int array
+- `printModes`: Print modes. Takes pointer to int array as argument
+- `primitivePrint`: Print numbers in tree in sequence
+- `printTree`: Print the tree visually
+- Overloaded assignment operator, Base Constructor, Binary Tree constructor with given levels, Destructor
 
 
 \*\***Highlighted helper function**\*\*:
