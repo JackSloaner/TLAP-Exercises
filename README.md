@@ -10,6 +10,10 @@ This repository contains all the practice questions I've completed while reading
 - Design patterns (builders, iterators, strategy/policy, etc.)
 
 Completing these exercises has been incredibly helpful in my learning journey, not only in terms of learning new programming concepts but also in the fundamental way in which I approach problems in general.
+### Side Note
+You may notice that I committed all of the C++ programs in one commit. This is because I completed all of these exercises a few months before deciding to make a github repository to document them.
+
+
 ## How to use
 1. Clone this repository onto your local machine
 2. To run the programs as they are already set up in `int main()`, simply navigate to the chosen program's file, in which you will find a pre-compiled executable file, enter `./{filename}` into the command line to run the program
