@@ -73,5 +73,5 @@ int main(){
   convert(converted, input_num, in_base, out_base);
 }
 
-// Convert any integer number to its representation of the number in base b, where the smallest denomination (rightmost unit) is b^0 and the largest is b^(max - 1) (leftmost unit)
+// Convert any number from any base to its representation of the number in any other base, where the smallest denomination (rightmost unit) is number * b^0 and the largest is number * b^(max - 1) (leftmost unit)
 // max is calculated in relation to the base and the maximum integer value.
