@@ -29,14 +29,14 @@ typedef ptrNode *ptrList;
     tree makeRandTree(int levels);
     void printTree();
     void makeBS(int levels);
-    bool isBS();
+    bool isBinarySearch();
     void insertNum(int num);
     void primitivePrint();
   private: 
     void insertNumber(int num);
     void primitivePrint(tree head);
     int insertNum(int num, tree head);
-    bool isBS(tree head);
+    bool isBinarySearch(tree head);
     void deleteTree(tree head);
     void makeBS(tree head, int lower, int upper);
     tree makeSkeleton(int levels);
@@ -180,12 +180,12 @@ bSearchTree::tree bSearchTree::makeSkeleton(int levels){
   return newNode;
 }
 
-bool bSearchTree::isBS(){
+bool bSearchTree::isBinarySearch(){
   if (!_head) return false;
-  return isBS(_head);
+  return isBinarySearch(_head);
 }
 
-bool bSearchTree::isBS(tree head){
+bool bSearchTree::isBinarySearch(tree head){
   if (!head) return true;
   bool leftCheck = true;
   if (head->LeftSide) {
@@ -196,8 +196,8 @@ bool bSearchTree::isBS(tree head){
     rightCheck = head->n < head->RightSide->n;
   }
   bool currentNode = rightCheck && leftCheck;
-  leftCheck = isBS(head->LeftSide);
-  rightCheck = isBS(head->RightSide);
+  leftCheck = isBinarySearch(head->LeftSide);
+  rightCheck = isBinarySearch(head->RightSide);
   return currentNode && leftCheck && rightCheck;
 }
 
@@ -213,7 +213,7 @@ void bSearchTree::insertNum(int num){
     return;
   }
 
-  if (!isBS()){
+  if (!isBinarySearch()){
     cout << "Tree is not binary search\n";
     return;
   }
@@ -279,8 +279,8 @@ int main(){
 // Class for binary search tree.
 // contains methods for:
 // - Making a basic binary search tree given number of levels
-// - verifying if tree is in fact binary search (isBS())
-// - Making random tree given a number levels (to test isBS())
+// - verifying if tree is in fact binary search (isBinarySearch())
+// - Making random tree given a number levels (to test isBinarySearch())
 // - inserting any given number into tree at the proper place to maintain binary search (main use of recursion)
 // - printing numbers in tree in a sequence (primitivePrint())
 // - printing tree visually (printTree())
