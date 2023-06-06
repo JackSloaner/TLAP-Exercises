@@ -35,7 +35,6 @@ void convert(int arr[], int input_num, int in_base, int out_base){
     int base_ten_transfer = modulo_count(input_num, modulo);
     input_num = input_num % modulo;
     base_ten_transfer = pow(in_base, i) * base_ten_transfer;
-    cout << base_ten_transfer << endl;
     input_converted += base_ten_transfer;
   }
   //Convert base-10 number to output base
